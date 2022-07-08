@@ -1,17 +1,5 @@
-import { Container, Section, Controls, Statistics } from 'components';
+import { Feedback } from 'components';
 
 export const App = () => {
-  return (
-    <Section>
-      <Container>
-        {/* <h1>Please leave feedback</h1> */}
-        {/* <Controls /> */}
-        <Statistics />
-      </Container>
-    </Section>
-  );
+  return <Feedback />;
 };
-
-//title - title
-//button - controls
-//stat - titlestat + stat

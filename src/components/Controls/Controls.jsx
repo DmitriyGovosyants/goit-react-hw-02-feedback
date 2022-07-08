@@ -1,19 +1,23 @@
-// import { ControlsList, Item, Button } from './Controls.styled';
+import { ControlsList, ControlsItem, Button } from './Controls.styled';
 
-// export const Controls = () => {
-//   return (
-//     <ControlsList>
-//       <Item>
-//         <Button type="button" onClick={() => console.log('1')}>
-//           Good
-//         </Button>
-//       </Item>
-//       <Item>
-//         <Button type="button">Neutral</Button>
-//       </Item>
-//       <Item>
-//         <Button type="button">Bad</Button>
-//       </Item>
-//     </ControlsList>
-//   );
-// };
+export const Controls = ({ onIncrState }) => {
+  return (
+    <ControlsList>
+      <ControlsItem>
+        <Button type="button" onClick={onIncrState}>
+          Good
+        </Button>
+      </ControlsItem>
+      <ControlsItem>
+        <Button type="button" onClick={onIncrState}>
+          Neutral
+        </Button>
+      </ControlsItem>
+      <ControlsItem>
+        <Button type="button" onClick={onIncrState}>
+          Bad
+        </Button>
+      </ControlsItem>
+    </ControlsList>
+  );
+};
