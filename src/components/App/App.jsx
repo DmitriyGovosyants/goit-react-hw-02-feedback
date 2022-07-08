@@ -4,8 +4,8 @@ export const App = () => {
   return (
     <Section>
       <Container>
-        <h1>Please leave feedback</h1>
-        <Controls />
+        {/* <h1>Please leave feedback</h1> */}
+        {/* <Controls /> */}
         <Statistics />
       </Container>
     </Section>
