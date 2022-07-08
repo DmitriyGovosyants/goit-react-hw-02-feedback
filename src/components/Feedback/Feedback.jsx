@@ -9,7 +9,7 @@ export class Feedback extends Component {
     bad: 0,
   };
 
-  incrementStatisticsValue = e => {
+  handleIncrement = e => {
     const currentBtn = e.target.textContent.toLowerCase();
 
     this.setState(prev => {
@@ -19,14 +19,14 @@ export class Feedback extends Component {
 
   render() {
     const { state } = this;
-    const { incrementStatisticsValue } = this;
+    const { handleIncrement } = this;
 
     return (
       <Section>
         <Container>
           <MainTitle>Please leave feedback</MainTitle>
-          <Controls onIncrState={incrementStatisticsValue} />
-          <Statistics onChangeStateView={state} />
+          <Controls onIncrementValue={handleIncrement} />
+          <Statistics onRenderValue={state} />
         </Container>
       </Section>
     );
