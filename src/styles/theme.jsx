@@ -1,6 +1,7 @@
 export const theme = Object.freeze({
   colors: {
     white: '#ffffff',
+    accent: 'blue',
     mainBackground: ['linear-gradient(to bottom, #c9d6ff,  #e2e2e2)'],
     btnBackground: `#997070`,
   },
