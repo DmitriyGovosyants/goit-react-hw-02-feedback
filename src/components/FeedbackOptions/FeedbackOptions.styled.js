@@ -1,9 +1,7 @@
 import styled from "@emotion/styled";
 
-export const ControlsList = styled.ul`
+export const Controls = styled.ul`
   display: flex;
-  margin-top: ${p => p.theme.spacing(5)};
-  margin-bottom: ${p => p.theme.spacing(5)};
 `
 
 export const ControlsItem = styled.li`
@@ -17,5 +15,6 @@ export const ControlsItem = styled.li`
 export const Button = styled.button`
   color: ${p => p.theme.colors.white};
   padding: ${p => p.theme.spacing(2)};
+  text-transform: capitalize;
 `
 

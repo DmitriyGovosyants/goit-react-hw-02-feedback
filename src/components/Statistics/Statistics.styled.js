@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const StatisticsList = styled.ul`
-  margin-top: ${p => p.theme.spacing(5)};
 `
 
 export const StatisticsItem = styled.li`

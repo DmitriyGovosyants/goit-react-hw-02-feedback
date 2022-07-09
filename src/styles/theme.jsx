@@ -7,6 +7,7 @@ export const theme = Object.freeze({
   fontSizes: {
     small: '14px',
     medium: '18px',
+    big: '26px',
   },
   spacing: value => `${4 * value}px`,
   animation: {
