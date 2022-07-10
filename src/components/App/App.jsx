@@ -10,8 +10,12 @@ export class App extends Component {
     bad: 0,
   };
 
+  stateKeys = () => {
+    return Object.keys(this.state);
+  };
+
   handleIncrement = index => {
-    const options = Object.keys(this.state);
+    const options = this.stateKeys();
     const currentBtn = options[index];
 
     this.setState(prev => {
@@ -21,7 +25,8 @@ export class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    const { handleIncrement } = this;
+    const { handleIncrement, stateKeys } = this;
+    const options = stateKeys();
     const total = countTotalFeedback(good, neutral, bad);
     const positive = countPositiveFeedbackPercentage(total, good);
 
@@ -30,7 +35,7 @@ export class App extends Component {
         <Container>
           <Section title="Please leave feedback">
             <FeedbackOptions
-              options={Object.keys(this.state)}
+              options={options}
               onLeaveFeedback={handleIncrement}
             />
           </Section>
